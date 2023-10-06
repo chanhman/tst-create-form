@@ -14,6 +14,9 @@ export default function App() {
   const [formData, setFormData] = useState(initialFormData);
   const [arePasswordsEqual, setArePasswordsEqual] = useState(true);
 
+  const isValid =
+    arePasswordsEqual && !!formData.username && !!formData.confirmPassword;
+
   const handleChange = (e) => {
     e.preventDefault();
     setFormData((prev) => {
@@ -41,7 +44,7 @@ export default function App() {
       <div className="inputGroupsContainer">
         <h1>Create an account</h1>
         <InputGroup
-          label="Username"
+          label="Username*"
           type="text"
           id="username"
           name="username"
@@ -51,7 +54,7 @@ export default function App() {
           autoFocus
         />
         <InputGroup
-          label="Password"
+          label="Password*"
           type="password"
           id="password"
           name="password"
@@ -61,7 +64,7 @@ export default function App() {
           required
         />
         <InputGroup
-          label="Confirm Password"
+          label="Confirm Password*"
           type="password"
           id="confirmPassword"
           name="confirmPassword"
@@ -73,7 +76,9 @@ export default function App() {
         {!arePasswordsEqual && <Alert message="Passwords do not match 😞" />}
 
         <div>
-          <button type="submit">Create</button>
+          <button type="submit" disabled={!isValid}>
+            Create
+          </button>
         </div>
       </div>
     </form>
