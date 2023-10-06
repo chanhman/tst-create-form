@@ -1,0 +1,80 @@
+:root {
+  --brand-color: #4d91db;
+  --danger-color: #e74c3c;
+  --border-radius: 0.25rem;
+  --box-shadow: 0 0.125rem 0 0 #2b7cd4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: var(--brand-color);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  min-width: 20rem;
+  padding: 0.8rem 1rem;
+}
+
+label,
+button {
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 1em;
+}
+
+label {
+  display: block;
+}
+
+button {
+  color: #fff;
+  box-shadow: var(--box-shadow);
+  background: var(--brand-color);
+  border: 0.0625rem solid var(--brand-color);
+  border-radius: var(--border-radius);
+  padding: 0.8rem 2.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.inputGroupsContainer {
+  display: grid;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.inputGroup {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.alert {
+  padding: 1rem;
+  color: #fff;
+  background-color: var(--danger-color);
+}
