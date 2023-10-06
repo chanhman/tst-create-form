@@ -7,6 +7,7 @@ export default function InputGroup({
   label,
   name,
   onChange,
+  onError,
   required = true,
   type = 'text',
   value,
@@ -22,6 +23,7 @@ export default function InputGroup({
         onChange={onChange}
         required={required}
         autoFocus={autoFocus}
+        className={`${onError && 'error'}`}
       />
     </div>
   );

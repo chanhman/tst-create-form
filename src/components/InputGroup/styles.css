@@ -11,3 +11,7 @@
   display: grid;
   gap: 0.5rem;
 }
+
+input.error {
+  border: 1px solid var(--danger-color);
+}

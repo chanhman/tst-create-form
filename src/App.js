@@ -55,6 +55,7 @@ export default function App() {
           name="password"
           value={formData.password}
           onChange={(e) => handleChange(e)}
+          onError={!arePasswordsEqual}
           required
         />
         <InputGroup
@@ -64,6 +65,7 @@ export default function App() {
           name="confirmPassword"
           value={formData.confirmPassword}
           onChange={(e) => handleChange(e)}
+          onError={!arePasswordsEqual}
         />
 
         {!arePasswordsEqual && (
