@@ -2,4 +2,5 @@
   padding: 1rem;
   color: #fff;
   background-color: var(--danger-color);
+  border-radius: var(--border-radius);
 }
