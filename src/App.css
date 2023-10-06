@@ -49,6 +49,7 @@ label {
 }
 
 button {
+  width: 100%;
   color: #fff;
   box-shadow: var(--box-shadow);
   background: var(--brand-color);
@@ -57,20 +58,6 @@ button {
   padding: 0.8rem 2.5rem;
   text-align: center;
   cursor: pointer;
-}
-
-.inputGroupsContainer {
-  display: grid;
-  gap: 2rem;
-  padding: 4rem;
-  background-color: #fff;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-}
-
-.inputGroup {
-  display: grid;
-  gap: 0.5rem;
 }
 
 .alert {

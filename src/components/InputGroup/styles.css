@@ -1,0 +1,13 @@
+.inputGroupsContainer {
+  display: grid;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.inputGroup {
+  display: grid;
+  gap: 0.5rem;
+}
