@@ -1,5 +1,7 @@
 # Create form app
 
+![form](https://github.com/chanhman/tst-create-form/assets/9286750/fe55f12e-b605-48d6-bfba-e4a785fe4626)
+
 Created with [Create React App](https://github.com/facebook/create-react-app). This makes setting up a React project a breeze. The boilerplate files and code were removed to reduce this project's assets.
 
 ## Task
