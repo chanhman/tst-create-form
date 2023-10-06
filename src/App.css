@@ -59,9 +59,3 @@ button {
   text-align: center;
   cursor: pointer;
 }
-
-.alert {
-  padding: 1rem;
-  color: #fff;
-  background-color: var(--danger-color);
-}

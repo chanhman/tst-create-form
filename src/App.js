@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+
+import Alert from './components/Alert/Alert';
 import InputGroup from './components/InputGroup/InputGroup';
 
 import './App.css';
@@ -68,9 +70,7 @@ export default function App() {
           onError={!arePasswordsEqual}
         />
 
-        {!arePasswordsEqual && (
-          <div className="alert">Passwords do not match 😞</div>
-        )}
+        {!arePasswordsEqual && <Alert message="Passwords do not match 😞" />}
 
         <div>
           <button type="submit">Create</button>
